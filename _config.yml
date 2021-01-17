@@ -25,7 +25,7 @@ url: "https://feelcame.github.io/blogg"
 twitter_username: jekyllrb
 github_username:  jekyll
 disqus:
-  shortname: annimon-tutorials
+  shortname:
 header_pages:
  - 01_articles.md
  - 02_codes.md
