@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Articles
-permalink: /articles/
+title: Mews
+permalink: /news
 ---
 
 ## это сообщение не будет выведено на сайт
