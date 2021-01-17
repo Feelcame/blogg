@@ -10,4 +10,4 @@ layout: default
 {% endfor %}
 
 
-html page
+html
