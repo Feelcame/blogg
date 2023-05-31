@@ -8,6 +8,7 @@ layout: home
 
 ---
 
+- "site.url": `{{ site.url }}`
 - "site.baseurl": `{{ site.baseurl }}`
 - "pages_hostname": `{{ site.github.pages_hostname }}`
 - "owner_name": `{{ site.github.owner_name }}`
