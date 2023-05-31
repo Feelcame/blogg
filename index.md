@@ -8,11 +8,18 @@ layout: home
 
 ---
 
-- "site.url": `{{ site.url }}`
 - "site.baseurl": `{{ site.baseurl }}`
 - "pages_hostname": `{{ site.github.pages_hostname }}`
 - "owner_name": `{{ site.github.owner_name }}`
 - "repository_name": `{{ site.github.repository_name }}`
 - "url" (or the CNAME): `{{ site.github.url }}`
 
+---
 
+- "baseur (my):" 
+{% unless site.github.repository_name == (site.github.owner_name | downcase | append: ".github.io") or (site.github.url | split: "/" | size < 3  ) %}
+{{ site.github.repository_name | prepend: "/" }}
+{% endunless %}
+
+- `site.github.owner_name | downcase | append: ".github.io"`: {{ site.github.owner_name | downcase | append: ".github.io" }}
+- `site.github.url | split: "/" | size`: {{ site.github.url | split: "/" | size }} 
