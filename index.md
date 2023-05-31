@@ -16,9 +16,7 @@ layout: home
 ---
 ```
 site.github.owner_name | downcase | append: ".github.io": {{ site.github.owner_name | downcase | append: ".github.io" }}
-site.github.url | split: "/" | size: `{{ site.github.url | split: "/" | size }}
-baseur_my: {% if (site.github.owner_name | downcase | append: ".github.io" != site.github.repository_name and site.github.url | split: "/" | size > 3 %}
-{{ site.github.repository_name | prepend: "/" }}
-{% endif %}
+site.github.url | split: "/" | size: {{ site.github.url | split: "/" | size }}
+baseur_my: {% if (site.github.owner_name | downcase | append: ".github.io" != site.github.repository_name and site.github.url | split: "/" | size > 3 %}{{ site.github.repository_name | prepend: "/" }}{% endif %}
 ```
 
